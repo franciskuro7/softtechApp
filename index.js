@@ -17,18 +17,5 @@
             else{
                 btn.style.display='none'
             }
-            // console.log(btn)
+            console.log(btn)
         }
-
-
-        document.addEventListener("DOMcontentLoaded", function(){
-            const htmlEditor = document.getElementById("html-editor");
-            const outPutFrame = document.getElementById("outPut").contentWindow.document;
-            function upDate(){
-                outPutFrame.open();
-                outPutFrame.write(htmlEditor.innerText);
-                outPutFrame.close();
-            }
-            htmlEditor.addEventListener("input", upDate);
-            upDate();
-        })
