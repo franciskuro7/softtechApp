@@ -5,26 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/4ebd05c9af.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="../src/logos/logo.png">
     <title>Login</title>
 </head>
 <body>
-   <img src="../src/logos/logodesign.png" alt="">
-    <div class="form">
-        <h1>login here</h1>
-        <div class="input-form" id="login"> 
-                <input type="email" id="details" placeholder="email">
-                <input type="password" id="details" placeholder="password">
+   <div class="form">
+        <div class="img">
+            <img src="../src/logos/logodesign.png" alt="">
         </div>
-        <div class="form-details">
-            <span>
-                <input type="checkbox">
-                <p>remember me</p>
-            </span>
-            <a href="../passwod reset/reset.html">forget password</a>
-        </div>
-        <button onclick="submit()" id="btn">login</button>
-        <p>dont have an account click? <a href="../registraton page/registeration.html">here</a></p>
-    </div>
+        <form>
+            <div class="form-wrapper">
+                <h1>login here</h1>
+                <div class="input-form" id="login"> 
+                        <input type="email" id="details" placeholder="email">
+                        <input type="password" id="details" placeholder="password">
+                </div>
+                <div class="form-details">
+                    <span class="checkbox">
+                        <input type="checkbox">
+                        <p>remember me</p>
+                    </span>
+                    <a href="../passwod reset/reset.html">forget password</a>
+                </div>
+                <button onclick="submit()" id="btn">login</button>
+                <p>dont have an account click? <a href="../registraton page/registeration.html">here</a></p>
+            </div>
+        </form>
+   </div>
     <script src="login.js"></script>
 </body>
 </html>

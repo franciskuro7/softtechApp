@@ -1,0 +1,245 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --main-color: #171a19;
+    --text-color: black;
+    --secondtext-color:#ffffff;
+    --bg-color:rgb(157, 199, 248);
+    --image-color: rgba(0,0,0,0.2) ;
+    --box-shadow: 2px 5px 10px rgba(37, 36, 36, 0.836) ;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+ }
+
+ 
+ nav{
+     width: 100%;
+     height: 100%;
+     background: var(--main-color);
+     padding: 30px 60px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .logo img{
+    width: 120px;
+}
+
+/* MOBILE MENU HERE START */
+
+.nav-menu{
+    display: none;
+}
+#cancel{
+    display: none;
+}
+
+/* MONBILE END HERE */
+
+
+header nav ul li{
+    display: inline;
+    align-items: center;
+    font-size: 17px;
+    margin: 0 20px 0 10px;
+}
+ul li a{
+    color: var(--secondtext-color);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+ul li a i{
+    font-size: 16px;
+    margin-right: 5px;
+}
+header nav  li:hover a{
+    color: var(--bg-color);
+}
+.account{
+    padding: 9px 9px;
+    background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+}
+.account a{
+    font-weight: 500;
+    font-size: 17px;
+    color: #000;
+}
+.account i{
+    margin-left:5px ;
+}
+
+
+
+
+
+
+.footer{
+    width: 100%;
+    padding: 0px 20px;
+    background-color: var(--main-color);
+    
+}
+.footer-wrapper{
+    width: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 20px;
+    padding:0 20px;
+    
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+}
+ 
+  
+
+.footer-content .news-feeds{
+    width: 100%s;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+
+ .footer-wrapper .footer-content h1{
+    color: var(--secondtext-color);
+    margin-left: 30px;
+    font-size: 23px;
+    text-transform: capitalize;
+}
+.footer-wrapper .footer-content a{
+    color: var(--secondtext-color);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    margin: 20px 0 0 30px;
+}.footer .col a:Hover{
+    color: var(--bg-color);
+}
+
+.footer-wrapper .footer-content p{
+    color: var(--secondtext-color);
+}
+.footer-wrapper .footer-content  .footer-contact{
+    margin-bottom: 5rem;
+}
+.footer-wrapper .footer-content .contact-info ul{
+    width: 100%;
+    list-style: none;
+}
+.footer-wrapper .footer-content .contact-info ul li{
+    display: flex;
+    align-items:center;
+    margin: 10px auto;
+   
+}
+
+.footer-wrapper .footer-content .contact-info i{
+    font-size: 18px;
+    color: var(--bg-color);
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.footer-wrapper .footer-content .contact-info a, p{
+    font-size: 17px;
+    margin-left:10px ;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: var(--secondtext-color);
+}
+
+.footer-wrapper .footer-content .social-media{
+    display: flex;
+    position: absolute;
+    bottom: 0%;
+    margin-top: 20rem;
+}
+.footer-wrapper .footer-content .social-media i{
+    font-size: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.footer-wrapper .footer-content .social-media i:hover{
+    background-color: var(--bg-color);
+    color: var(--secondtex-color);
+    transform: translateY(-10px);
+}
+.footer-wrapper .footer-content  h4{
+    font-size: 20px;
+    margin-left:10px ;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: var(--secondtext-color);
+    line-height: 2rem;
+
+}
+.footer-wrapper .footer-content  .news-feeds{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.footer-content .news-feeds input{
+    width: 88%;
+    height:45px;
+    padding:0px 20px;
+    border:none;
+    outline:none;
+    border-radius: 30px 0px 0px 30px;
+}
+.footer-content .news-feeds  #subscribe{
+    width: 12%;
+    height:45px;
+    border:none;
+    outline:none;
+    background: var(--bg-color);
+    border-radius: 0% 30px 30px 0%;
+    cursor: pointer;
+}
+.footer-content .news-feeds  #subscribe i{
+    font-size: 25px;
+    
+}
+
+.footer .copywrite p{
+    color: var(--secondtext-color);
+    letter-spacing: 1px;
+    font-size: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 10px;
+    opacity: 0.5;
+}

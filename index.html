@@ -6,7 +6,7 @@
     <script src="https://kit.fontawesome.com/4ebd05c9af.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./glober-css/mobile.css">
-    <link rel="icon" href="./src/icons/logo1.png">
+    <link rel="icon" href="./src/logos/logo.png">
     <title>SOFT-TECH</title>
 </head>
 <body>
@@ -15,20 +15,23 @@
             <div class="logo">
                 <img src="./src/logos/logo.png" alt="">
             </div>
-            <div class="nav-menu">
-                <img src="./src/icons/nav-logo.png" alt="" class="toggle" onclick="toggleMenu()">
-            </div>
+            
 
             <ul class="navBar">
                 <img src="src/icons/cancel-logo.png" alt="" id="cancel" onclick="hide()">
                 <li><a href=""><i class=" fa fa-home"></i>home</a></li>
-                <li><a href="#footer">About Us</a></li>
-                <li><a href="article"><i class=" fa fa-code"></i>Programms</a></li>
-                <li><a href="#propointerpointergram"></a></li>
+                <li><a href="article"><i class=" fa fa-code"></i>Project</a></li>
+                <li><a href="./blog/blog.html"><i class="fa-solid fa-blog"></i>Blog</a></li>
                 <li><a href="#"><i class=" fa fa-phone"></i>Contact Us</a></li>
             </ul>
             
-            <span class="account"><a href="/login page//login.html">Login<i class=" fa fa-user"></i></a></span>
+            <div style="display: flex; margin: 0px 3px;">
+                <span class="account"><a href="/login page/login.html">Login<i class=" fa fa-user"></i></a></span>
+                <span class="account-icons"><a href="/login page/login.html"><i class=" fa fa-user"></i></a></span>
+                <div class="nav-menu">
+                    <img src="./src/icons/nav-logo.png" alt="" class="toggle" onclick="toggleMenu()">
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -41,19 +44,22 @@
                 analytics and general consultants.</p>
 
            <div class="btn">
-                <!-- <a href="./registraton page/registeration.html"><button>get started >></button></a>
-                <a href=""><button>About Us >></button></a> -->
+                <a href="./registraton page/registeration.html"><button>get started >></button></a>
+                <a href="./aboutUs/aboutUs.html"><button>About Us >></button></a>
            </div>
             <!-- <button>&#9658</button> -->
         </div>
+
+
         <!-- FLOATING ICONS  -->
         <div class="floot-icons">
             <i class="fa fa-facebook"></i>
-            <i class="fa fa-x"></i>
+            <i class="fa-brands fa-x-twitter"></i>
             <i class="fa fa-instagram"></i>
             <i class="fa fa-whatsapp"></i>
         </div>
         
+        <!-- SLIDER CARD  -->
         <div class="card-wrapper">
             <div class="card">
                 <div class="slider">
@@ -101,19 +107,43 @@
        <div class="works-wrapper">
             <div class="works-content">
                 <img src="./src/image/2.jpg" alt="">
-                <button>click to view</button>
+                <div class="work-description">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores esse tempora 
+                        expedita reiciendis, corrupti officiis aliquam excepturi sunt ipsum nam.
+                    </p>
+                    <button>click to view</button>
+                </div>
             </div>
             <div class="works-content">
                 <img src="./src/image/2.jpg" alt="">
-                <button>click to view</button>
+                <div class="work-description">
+                    <!-- <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores esse tempora 
+                        expedita reiciendis, corrupti officiis aliquam excepturi sunt ipsum nam.
+                    </p> -->
+                    <button>click to view</button>
+                </div>
             </div>
             <div class="works-content">
                 <img src="./src/image/2.jpg" alt="">
-                <button>click to view</button>
+                <div class="work-description">
+                    <!-- <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores esse tempora 
+                        expedita reiciendis, corrupti officiis aliquam excepturi sunt ipsum nam.
+                    </p> -->
+                    <button>click to view</button>
+                </div>
             </div>
             <div class="works-content">
                 <img src="./src/image/2.jpg" alt="">
-                <button>click to view</button>
+                <div class="work-description">
+                    <!-- <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores esse tempora 
+                        expedita reiciendis, corrupti officiis aliquam excepturi sunt ipsum nam.
+                    </p> -->
+                    <button>click to view</button>
+                </div>
             </div>
 
         
@@ -121,18 +151,26 @@
        </div>
     </div>
     <div class="gallery">
-            <a href="media "></a>
             <span></span>
             <span></span>
             <span></span>
-        <   <span></span>
-        <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <div class="form">
         
-            <div class="col1">
-                <div class="brief-info">
+        <div class="form-project">
+        
+            <div class="project-list">
+                <h4>My Demo Works for far</h4>
+                <div class="project-demo">
+                    <div class="project-demo_content">
+                        <div class="project-demo_img">
+                            <img src="" alt="">
+                        </div>
+
+                    </div>
                 </div>
+                <button >click for more content</button>
             </div>
 
             <div class="enquries-form">
@@ -179,15 +217,17 @@
                                 </li>
                             </ul>
                             
+                            
+                        </div>
+                        <div class="social-media">
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa-brands fa-x-twitter"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-telegram"></i>
+            
                         </div>
                     </div>
-                    <div class="social-media">
-                        <i class="fa fa-facebook"></i>
-                        <i class="fa fa-twitter"></i>
-                        <i class="fa fa-instagram"></i>
-                        <i class="fa fa-telegram"></i>
-        
-                    </div>
+                    
                 </div>
 
                 <div class="footer-content">
@@ -198,11 +238,13 @@
                         <a href="#">Full-Stck Developer</a>
                 </div>
                 <div class="footer-content">
-                    <h4>news letter</h4>
+                        <h4>news letter</h4>
                         <div class="news-feeds">
                             <input type="email" placeholder="Add Mail">
                             <button id="subscribe"><i class="fa fa-send"></i></button>
                         </div>
+
+                        
                 </div>
             </div>
 

@@ -1,3 +1,4 @@
+ 
         function toggleMenu(){
             var navMenu = document.querySelector('.navBar');
             navMenu.style.display = 'flex'

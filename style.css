@@ -29,12 +29,13 @@ header{
     top: 0px;
     z-index: 10;
  }
+
  
  nav{
      width: 100%;
      height: 100%;
      background: var(--main-color);
-     padding: 30px 40px;
+     padding: 30px 60px;
      display: flex;
      justify-content: space-between;
      align-items: center;
@@ -81,6 +82,7 @@ header nav  li:hover a{
     align-items: center;
     border-radius: 4px;
 }
+
 .account a{
     font-weight: 500;
     font-size: 17px;
@@ -90,6 +92,9 @@ header nav  li:hover a{
     margin-left:5px ;
 }
 
+.account-icons{
+    display: none;
+}
 
                 /* MIAN CONTENT SECTION HERE */
 
@@ -240,10 +245,9 @@ main{
     }
 }
 
-
 .articles{
     width: 100%;
-    padding:20px 30px;
+    padding:20px 50px;
     margin-top: 15rem;
 }
 
@@ -254,7 +258,7 @@ main{
 .articles .row{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 1.5em;
     margin: 20px 0 0 0 ;
     
@@ -280,7 +284,7 @@ main{
 }
 .works{
     width: 100%;
-    padding: 20px 30px;
+    padding: 20px 50px;
     margin: 5em 0px; 
     
 }
@@ -333,77 +337,38 @@ main{
     background-size: cover;
 }
 
-.form{
+.form-project{
     width: 100%;
-    height: 100vh;
-    display: flex;    
+    display: none;
+    /* grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); */
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    padding: 10px 50px;
+
+}
+.project-list{
+    background: lime;
+
+}
+.enquries-form{
+    padding: 10px;
+    background: red;
+}
+.enquries-form form{
+    display: flex;
+    flex-direction: column;
+}
+.enquries-form form input{
+    width: 100%;
+    height: 50px;
+    outline:none;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0px;
+    padding: 0px 10px;
 }
 
-.form .col1{
-    flex: 1;
-    height: 100vh;
-    background:rgb(0, 0, 0);
-}
-.heading{
-    width: 100%;
-    height: 25vh;
-}
-.containner{
-    width: 100%;
-    height: 75%;
-    display: flex;
-    background:rgb(0, 0, 0);
-}
-.form .col1 .box1{
-    width: 50%;
-    height: 100%;
-    border-bottom: 2px solid red;
-    outline: none;
-    scroll-snap-type: mandatory;
-    overflow-y:scroll;
-    color: var(--secondtext-color);
-}
-.form .col1 .box2{
-    width:50%;
-    height: 100%;
-    overflow-y: scroll;
-    background-color: white;
-}
-.form .col2{
-    flex: 1;
-    padding: 5px 0;
-    background-color: rgb(236, 235, 235);
-}
-.form .col2 input{
-    width:90%;
-    height: 45px;
-    margin: 15px 0 0 25px;
-    padding-left:20px;
-    font-size:15px;
-    position: relative;
-    top: 40px;
-    outline: none;
-    border: none;
-    box-shadow: 0px 1px  1px   lightgray;
-}
-.form .col2 textarea{
-    width:60%;
-    height: 25%;
-    margin: 60px 0 20px 25px;
-    padding:10px;
-    font-size:15px;
-    outline: none;
-    border: 1px solid lightgray;
-}
-.form .col2 button{
-    padding:15px 40px;
-    margin: 0px 0 0 25px;
-    font-size:15px;
-    font-weight:bold;
-    border: 1px solid lightgray;
-    border-radius: 30px;
-    cursor: pointer;
-}
+
+
 .info{
     width: 100%;
     height: 40vh;
@@ -441,6 +406,7 @@ main{
 
 .footer{
     width: 100%;
+    padding: 0px 20px;
     background-color: var(--main-color);
     
 }
@@ -486,9 +452,9 @@ main{
     color: var(--bg-color);
 }
 
-/* .footer-wrapper .footer-content p{
+.footer-wrapper .footer-content p{
     color: var(--secondtext-color);
-} */
+}
 .footer-wrapper .footer-content  .footer-contact{
     margin-bottom: 5rem;
 }
@@ -521,7 +487,6 @@ main{
     display: flex;
     position: absolute;
     bottom: 0%;
-    left: 20px;
     margin-top: 20rem;
 }
 .footer-wrapper .footer-content .social-media i{
@@ -587,21 +552,38 @@ main{
     padding: 10px;
     opacity: 0.5;
 }
+@media screen and (max-width:1110px) {
+     .floot-icons{
+        display: none;
+    }
 
+}
 
 @media screen and (max-width:870px) {
+    nav{
+        padding: 0px 4px;
+    }
     nav ul{
         position: absolute;
         right: 0;
         top: 5rem;
         display: none;
     }
+    .account{
+        display: none;
+    }
+    .account-icons{
+        padding: 9px 10px;
+        background: var(--bg-color);
+        display: flex;
+        align-items: center;
+        border-radius: 50px;
+    }
    .nav-menu{
     display: block;
     width: 30px;
     height: 35px;
-    position: relative;
-    right: -16rem;
+    margin-left: 10px;
    }
     .card{
         width: 100%;
@@ -609,16 +591,16 @@ main{
         top: -2rem;
     }
     .articles{
-        padding:20px 30px;
+        padding:20px 3px;
         margin-top: 2rem;
     }
     .works{
         margin-top: 1rem;
+        padding: 0px;
     }
-    .floot-icons{
-        display: none;
+    .footer{
+        padding: 0px;
     }
-
     .footer-wrapper .footer-content .footer-contact{
         margin-bottom: 2rem;
     }
